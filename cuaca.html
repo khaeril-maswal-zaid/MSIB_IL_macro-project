@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Halaman Web Saya</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style-cuaca.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a class="logo">AQUA RESQUE</a>
+      <div class="menu"></div>
+      <nav>
+        <ul>
+          <li class="beranda"><a href="/index.html">Beranda</a></li>
+          <li class="cuaca"><a href="#">Cuaca</a></li>
+          <li class="mengapa"><a href="#">Mengapa Air</a></li>
+          <li class="informasi">
+            <a href="#">Informasi <i class="bx bxs-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="#">Kerja Sama</a></li>
+              <li><a href="#">Transpransi</a></li>
+              <li><a href="#">Tentang Kami</a></li>
+              <li><a href="#">Artikel</a></li>
+              <li><a href="#">Pembagian</a></li>
+            </ul>
+          </li>
+          <li class="donasi"><a href="#">Donasi</a></li>
+          <li class="lokasi"><a href="#">Usulkan Lokasi</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>INFORMASI CUACA</h1>
+    </section>
+
+    <section class="info">
+      <main>
+        <div class="container">
+          <div class="current-info">
+            <div class="date-container">
+              <div class="time" id="time">12:30 <span id="am-pm">PM</span></div>
+              <div class="date" id="date">Monday, 18 July</div>
+
+              <div class="others" id="current-weather-items"></div>
+            </div>
+
+            <div class="place-container">
+              <div class="time-zone" id="time-zone">Asia/Kolkata</div>
+              <div id="country" class="country">IN</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="future-forecast">
+          <div class="today" id="current-temp">
+            <img
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt="weather icon"
+              class="w-icon"
+            />
+            <div class="other">
+              <div class="day">Monday</div>
+              <div class="temp">Night - 25.6&#176; C</div>
+              <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+          </div>
+
+          <div class="weather-forecast" id="weather-forecast">
+            <div class="weather-forecast-item">
+              <div class="day">Tue</div>
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt="weather icon"
+                class="w-icon"
+              />
+              <div class="temp">Night - 25.6&#176; C</div>
+              <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <aside>
+        <div class="article-card">
+          <img src="/assets/img/img-donasi-1.jpg" alt="Gambar Artikel" />
+          <div class="article-details">
+            <a href="#"
+              ><p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium?
+              </p></a
+            >
+          </div>
+        </div>
+        <div class="article-card">
+          <img src="/assets/img/img-donasi-2.jpg" alt="Gambar Artikel" />
+          <div class="article-details">
+            <a href="#"
+              ><p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium?
+              </p></a
+            >
+          </div>
+        </div>
+        <div class="article-card">
+          <img src="/assets/img/img-donasi-3.jpg" alt="Gambar Artikel" />
+          <div class="article-details">
+            <a href="#"
+              ><p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium?
+              </p></a
+            >
+          </div>
+        </div>
+        <div class="article-card">
+          <img src="/assets/img/img-donasi-4.jpg" alt="Gambar Artikel" />
+          <div class="article-details">
+            <a href="#"
+              ><p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium?
+              </p></a
+            >
+          </div>
+        </div>
+        <div class="article-card">
+          <img src="/assets/img/img-donasi-5.jpg" alt="Gambar Artikel" />
+          <div class="article-details">
+            <a href="#"
+              ><p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium?
+              </p></a
+            >
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-text">
+          <h2>AQUA RESQUE</h2>
+          <p>
+            Aqua Resque adalah platform donasi air yang bertujuan untuk
+            menyediakan akses air bersih bagi yang membutuhkan, meningkatkan
+            kesadaran tentang krisis air, dan memberikan sumber daya edukasi.
+            Pengunjung dapat berpartisipasi dalam kampanye donasi, mendapatkan
+            informasi, dan terhubung dengan komunitas yang peduli tentang
+            pelestarian air. Kami juga menekankan transparansi dalam penggunaan
+            dana donasi. Dengan website ini, kami berupaya bersama-sama
+            mengatasi krisis air global.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <li><a href="#"></a>Instagram</li>
+          <li><a href="#"></a>Telegram</li>
+          <li><a href="#"></a>Twitter</li>
+          <li><a href="#"></a>Facebook</li>
+        </div>
+        <div class="footer-col">
+          <h4>Informasi</h4>
+          <li><a href="#"></a>Tentang Kami</li>
+          <li><a href="#"></a>Transpransi</li>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <li><a href="#"></a>Kebijakan Privasi</li>
+          <li><a href="#"></a>Ketentuan Pengguna</li>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>

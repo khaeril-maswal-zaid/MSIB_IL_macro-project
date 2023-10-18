@@ -1,0 +1,354 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --bg-color: #1f1f21;
+  --bg-sucess: rgb(0, 128, 0);
+  --text-color: #fff;
+  --main-color: #274d70;
+  --big-font: 7rem;
+  --p-font: 1.1rem;
+  --sub-font: 1rem;
+}
+
+body {
+  background-color: #8acdf3;
+}
+
+.bg-success {
+  color: var(--bg-sucess);
+}
+
+/* Mulai nav bar */
+
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  min-height: 66px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 32px;
+  background: var(--main-color);
+  transition: all ease 0.45s;
+}
+
+.logo {
+  color: var(--text-color);
+  font-family: Judson;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+header ul {
+  position: relative;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+  float: left;
+}
+
+.informasi i {
+  margin-top: 2px;
+}
+
+header ul li a {
+  color: var(--text-color);
+  font-size: var(--sub-font);
+  padding: 20px 20px;
+  text-decoration-line: none;
+  justify-content: space-between;
+  display: flex;
+}
+
+header ul li.beranda:hover {
+  border-bottom: 3px solid #64d6f4;
+  border-top: 3px solid #64d6f4;
+}
+
+header ul li.cuaca:hover {
+  border-bottom: 3px solid #64d6f4;
+  border-top: 3px solid #64d6f4;
+}
+
+header ul li.mengapa:hover {
+  border-bottom: 3px solid #64d6f4;
+  border-top: 3px solid #64d6f4;
+}
+
+header ul li.informasi:hover {
+  border-bottom: 3px solid #64d6f4;
+  border-top: 3px solid #64d6f4;
+}
+
+header ul li.donasi:hover {
+  border-bottom: 3px solid #64d6f4;
+  border-top: 3px solid #64d6f4;
+}
+
+header ul li.lokasi:hover {
+  border-bottom: 3px solid #64d6f4;
+  border-top: 3px solid #64d6f4;
+}
+
+header ul li .dropdown {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background-color: var(--main-color);
+  display: none;
+}
+
+header ul li.informasi:hover .dropdown {
+  display: block;
+}
+
+header ul li ul li:hover {
+  background-color: #152a3d;
+}
+
+header ul li .dropdown li {
+  position: relative;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Mulai responsive nav */
+
+@media (max-width: 920px) {
+  header {
+    padding: 10px 20px;
+  }
+  header nav {
+    position: absolute;
+    width: 100%;
+    top: 66px;
+    left: 0;
+    background: #386ea0;
+    display: none;
+  }
+  header.active nav {
+    display: initial;
+  }
+  header nav ul li {
+    width: 100%;
+  }
+  header ul li .dropdown {
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
+  .menu {
+    position: relative;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    background: white;
+    transform: translateY(-12px);
+    box-shadow: 0 12px white;
+  }
+  .menu::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    background: white;
+    transform: translateY(12px);
+  }
+  header.active .menu::before {
+    transform: rotate(45deg);
+    box-shadow: 0 0 white;
+  }
+  header.active .menu::after {
+    transform: rotate(315deg);
+  }
+}
+
+/* end responsive nav */
+
+/*  Star main img */
+/* Styling Hero Section */
+.hero {
+  background-image: url("/assets/img/main-donasi.jpg"); /* Ganti dengan path gambar latar belakang Anda */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 150px 0;
+  position: relative;
+  top: 77px;
+  margin-bottom: 100px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+}
+
+/* ------------------------------------------------------------------- */
+/* Styling Card Section */
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #8acdf3; /* Warna biru muda yang cocok dengan latar belakang body */
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  max-width: 300px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  background-color: #edeff9;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Sudut terbulat pada gambar */
+}
+
+.card h4 {
+  margin: 10px 0px 7px 0px;
+}
+
+.card i {
+  color: green;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  text-align: center;
+  padding: 0px 4px;
+}
+
+/* Optional: Add hover effect */
+.card:hover {
+  background-color: var(
+    --main-color
+  ); /* Warna biru muda yang lebih terang saat hover */
+  transform: scale(1.05);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
+  color: var(--text-color);
+}
+
+/* ----------------------------- */
+/* Styling Progres Horizontal */
+.progress-container {
+  width: 100%;
+  background-color: #ccc;
+  height: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.progress-bar {
+  width: 66%; /* Ubah nilai ini untuk mengatur kemajuan progres */
+  height: 100%;
+  background-color: #007bff; /* Warna progres */
+  border-radius: 10px;
+  font-size: 73%;
+  padding-top: 3px;
+  color: var(--text-color);
+}
+
+.progress-label {
+  margin-top: 5px;
+}
+
+.progress-text-below {
+  margin-bottom: 12px;
+}
+
+.progress-label,
+.progress-text-below {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.progress-text-left,
+.progress-text-right {
+  padding: 0 5px;
+  font-size: 80%;
+}
+
+/* -------------------- */
+.donate-button {
+  background-color: var(--bg-sucess); /* Warna tombol donasi */
+  color: #fff; /* Warna teks tombol donasi */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* --------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+.footer {
+  color: white;
+  background-color: var(--main-color);
+  position: relative;
+  padding: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content .footer-text {
+  display: flex;
+  flex-direction: column;
+  width: 348px;
+  text-align: justify;
+}
+
+.footer-content .footer-text h2 {
+  font-family: Judson;
+}
+
+.footer-content .footer-text p {
+  opacity: 70%;
+}
+
+.footer-content .footer-col li {
+  opacity: 70%;
+}
