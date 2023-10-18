@@ -1,0 +1,289 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --bg-color: #1f1f21;
+    --text-color: #fff;
+    --main-color: #274D70;
+    --big-font: 2.1rem;
+    --p-font: 1.1rem;
+    --sub-font: 1rem;
+}
+
+
+/* Mulai nav bar */
+
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    min-height: 66px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 32px;
+    background: var(--main-color);
+    transition: all ease .45s;
+}
+
+.logo {
+    color: var(--text-color);
+    font-family: Judson;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+header ul {
+    position: relative;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+    float: left;
+}
+
+.informasi i {
+    margin-top: 2px;
+}
+
+header ul li a {
+    color: var(--text-color);
+    font-size: var(--sub-font);
+    padding: 20px 20px;
+    text-decoration-line: none;
+    justify-content: space-between;
+    display: flex;
+}
+
+header ul li.beranda:hover {
+    border-bottom: 3px solid #64d6f4;
+    border-top: 3px solid #64d6f4;
+    transition: all 0.3s ease-in-out;
+}
+
+header ul li.cuaca:hover {
+    border-bottom: 3px solid #64d6f4;
+    border-top: 3px solid #64d6f4;
+    transition: all 0.3s ease-in-out;
+}
+
+header ul li.mengapa:hover {
+    border-bottom: 3px solid #64d6f4;
+    border-top: 3px solid #64d6f4;
+    transition: all 0.3s ease-in-out;
+}
+
+header ul li.informasi:hover {
+    border-bottom: 3px solid #64d6f4;
+    border-top: 3px solid #64d6f4;
+    transition: all 0.3s ease-in-out;
+}
+
+header ul li.donasi:hover {
+    border-bottom: 3px solid #64d6f4;
+    border-top: 3px solid #64d6f4;
+    transition: all 0.3s ease-in-out;
+}
+
+header ul li.lokasi:hover {
+    border-bottom: 3px solid #64d6f4;
+    border-top: 3px solid #64d6f4;
+    transition: all 0.3s ease-in-out;
+}
+
+header ul li .dropdown {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background-color: var(--main-color);
+    display: none;
+    transition: all 3s ease;
+}
+
+header ul li.informasi:hover .dropdown {
+    display: block;
+}
+
+header ul li ul li:hover {
+    background-color: #152a3d;
+}
+
+header ul li .dropdown li {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+/* Mulai responsive nav */
+
+@media (max-width: 920px) {
+    header {
+        padding: 10px 20px;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        top: 66px;
+        left: 0;
+        background: #386ea0;
+        display: none;
+    }
+    header.active nav {
+        display: initial;
+    }
+    header nav ul li {
+        width: 100%;
+    }
+    header ul li .dropdown {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+    .menu {
+        position: relative;
+        width: 40px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu::before {
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 3px;
+        background: white;
+        transform: translateY(-12px);
+        box-shadow: 0 12px white;
+    }
+    .menu::after {
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 3px;
+        background: white;
+        transform: translateY(12px);
+    }
+    header.active .menu::before {
+        transform: rotate(45deg);
+        box-shadow: 0 0 white;
+    }
+    header.active .menu::after {
+        transform: rotate(315deg);
+    }
+}
+
+section {
+    padding: 70px 25%;
+}
+
+.conten {
+    height: 50vh;
+    padding-top: 13%;
+    text-align: center;
+    font-size: 5vh;
+    color: #fff;
+    opacity: 70%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(https://s3-alpha-sig.figma.com/img/2744/2d3e/8d77d45bbfc114d09bd31b0e6888ef78?Expires=1698624000&Signature=kxAf-CzjMOpP9JMLuAxa-E0kGFlnNrSljtjgQHSqqaHNBob8GxnJGAMa3Y661Sp2pOTnadXe4sJ1MRgtFJCSdFoRUj3j~uEW3sNckkOy5XcrQjaTh0XCutJSaR9O3K5l6c-NMgVvacJws4dpXbCS8OE3msTAIR9dUD4g3TvZjO3z~Ic6hwhSyQED~xsY8N90RN8p7ranFRm4MERyrepvl62d8KOFydEs3a6M0MXSdbyQQb-tIgv7gkgKri30t4LrGSnDCQA35yHHwvoU5gW45mb--PD55-D4vXPNc1iHfOznGWuCDsHn3-z6SShpLMWGiHqodjJ5lhM7g6yh-7hCkw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+}
+
+
+/* isi */
+
+.text-content {
+    text-align: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.text-content .h-text {
+    font-size: var(--p-font);
+    margin-bottom: 3%;
+}
+
+.text-content .p-text p {
+    margin-top: 2%;
+}
+
+.pendiri .text-pendiri {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.fotopara-pendiri {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    text-align: center;
+    margin-left: 2.5rem;
+}
+
+.visi-misi h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.content-visimisi {
+    display: flex;
+    align-items: flex-start;
+    gap: 27rem;
+}
+
+.visi p {
+    width: 350px;
+    text-align: justify;
+}
+
+.misi p {
+    width: 350px;
+    text-align: justify;
+}
+
+
+/* footer */
+
+.footer {
+    margin-top: 3rem;
+    color: white;
+    background-color: var(--main-color);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content .footer-text {
+    display: flex;
+    flex-direction: column;
+    width: 348px;
+    text-align: justify;
+}
+
+.footer-content .footer-text h2 {
+    font-family: Judson;
+}
+
+.footer-content .footer-text p {
+    opacity: 70%;
+}
+
+.footer-content .footer-col li {
+    opacity: 70%;
+}

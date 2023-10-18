@@ -9,20 +9,12 @@
 
 :root {
   --bg-color: #1f1f21;
-  --bg-sucess: rgb(0, 128, 0);
   --text-color: #fff;
   --main-color: #274d70;
   --big-font: 7rem;
   --p-font: 1.1rem;
   --sub-font: 1rem;
-}
-
-body {
-  background-color: #8acdf3;
-}
-
-.bg-success {
-  color: var(--bg-sucess);
+  --kecil-font: 0.5rem;
 }
 
 /* Mulai nav bar */
@@ -188,146 +180,186 @@ header ul li .dropdown li {
 
 /* end responsive nav */
 
-/*  Star main img */
-/* Styling Hero Section */
-.hero {
-  background-image: url("/assets/img/main-donasi.jpg"); /* Ganti dengan path gambar latar belakang Anda */
-  background-size: cover;
-  background-position: center;
+/* end nav bar */
+
+/* artilel */
+
+.conten {
+  background-color: #274d70;
+  height: 50vh;
+  padding-top: 13%;
   text-align: center;
+  font-size: 5vh;
   color: white;
-  padding: 150px 0;
-  position: relative;
-  top: 77px;
-  margin-bottom: 100px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(https://ecs7.tokopedia.net/blog-tokopedia-com/uploads/2018/10/DONASI-PALU-1068x601.jpg);
 }
 
-.hero h1 {
-  font-size: 3rem;
+.container .informasi {
+  width: 492px;
+  height: 670px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: -7px 13px 33px 0px rgba(0, 0, 0, 0.1),
+    -27px 54px 60px 0px rgba(0, 0, 0, 0.09),
+    -61px 121px 81px 0px rgba(0, 0, 0, 0.05),
+    -108px 216px 96px 0px rgba(0, 0, 0, 0.01),
+    -168px 337px 105px 0px rgba(0, 0, 0, 0);
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+.main {
+  margin-left: 5%;
 }
 
-/* ------------------------------------------------------------------- */
-/* Styling Card Section */
-.cards {
+.main .container .main-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
+  gap: 6rem;
 }
 
-.card {
-  background-color: #8acdf3; /* Warna biru muda yang cocok dengan latar belakang body */
-  border-radius: 10px;
-  padding: 15px;
-  text-align: center;
-  max-width: 300px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
-  background-color: #edeff9;
-}
-
-.card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px; /* Sudut terbulat pada gambar */
-}
-
-.card h4 {
-  margin: 10px 0px 7px 0px;
-}
-
-.card i {
-  color: green;
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 14px;
-  text-align: center;
-  padding: 0px 4px;
-}
-
-/* Optional: Add hover effect */
-.card:hover {
-  background-color: var(
-    --main-color
-  ); /* Warna biru muda yang lebih terang saat hover */
-  transform: scale(1.05);
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
-  color: var(--text-color);
-}
-
-/* ----------------------------- */
-/* Styling Progres Horizontal */
-.progress-container {
-  width: 100%;
-  background-color: #ccc;
-  height: 20px;
-  border-radius: 10px;
-  margin-top: 20px;
-}
-
-.progress-bar {
-  width: 66%; /* Ubah nilai ini untuk mengatur kemajuan progres */
-  height: 100%;
-  background-color: #007bff; /* Warna progres */
-  border-radius: 10px;
-  font-size: 73%;
-  padding-top: 3px;
-  color: var(--text-color);
-}
-
-.progress-label {
-  margin-top: 5px;
-}
-
-.progress-text-below {
-  margin-bottom: 12px;
-}
-
-.progress-label,
-.progress-text-below {
+.main .headtext {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
 }
 
-.progress-text-left,
-.progress-text-right {
-  padding: 0 5px;
-  font-size: 80%;
+.main .headtext h2 {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
-/* -------------------- */
-.donate-button {
-  background-color: var(--bg-sucess); /* Warna tombol donasi */
-  color: #fff; /* Warna teks tombol donasi */
+.main .headtext h2 a {
+  color: var(--main-color);
+}
+
+.main .headtext .underline {
+  text-decoration: underline;
+}
+
+.container .informasi {
+  padding-left: 5rem;
+}
+
+.informasi .informasi-text .nama {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.informasi .informasi-text .w3-light-grey {
+  width: 70%;
+  margin-bottom: 2rem;
+}
+
+.informasi .informasi-text .verif {
+  margin-bottom: 1rem;
+}
+
+.container .informasi .informasi-img img {
+  width: 300px;
+  height: 150px;
+  margin-top: 2rem;
+}
+
+.informasi .informasi-text progress {
+  margin-bottom: 2rem;
+}
+
+.informasi .informasi-text .target-terkumpul {
+  margin-bottom: 2rem;
+}
+
+.informasi .informasi-text .target-terkumpul .terkumpul {
+  padding-right: 3rem;
+}
+
+.informasi .informasi-text .deskripsi {
+  width: 70%;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+/* progress bar */
+
+.container2 {
+  width: 300px;
+  margin-bottom: 2rem;
+}
+
+@keyframes progressAnimationStrike {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.progress2 {
+  padding: 6px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.25);
+  /* box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08); */
+}
+
+.progress-bar2 {
+  height: 18px;
+  border-radius: 10px;
+  /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05)); */
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.progress-moved .progress-bar2 {
+  width: 85%;
+  background-color: #008cff;
+  animation: progressAnimation 6s;
+}
+
+.informasi .informasi-text .button {
+  width: 76%;
+  text-align: center;
+}
+
+.informasi .informasi-text button {
+  background-color: #008cba;
+  /* Green */
   border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
-  margin-top: 20px;
-  cursor: pointer;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
-/* --------------------------------------------------------------- */
-/* ------------------------------------------------------------------------- */
+/* main */
+
+.main .text {
+  width: 591px;
+  text-align: justify;
+}
+
+.main .text img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.informasi .informasi-text .target-terkumpul {
+  display: flex;
+}
+
+section {
+  padding: 70px 17%;
+}
+
 .footer {
   color: white;
   background-color: var(--main-color);
-  position: relative;
-  padding: 50px;
 }
 
 .footer-content {
@@ -353,3 +385,5 @@ header ul li .dropdown li {
 .footer-content .footer-col li {
   opacity: 70%;
 }
+
+/* -------------------------------------------------------------------- */

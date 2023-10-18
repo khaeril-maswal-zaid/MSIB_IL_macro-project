@@ -9,20 +9,12 @@
 
 :root {
   --bg-color: #1f1f21;
-  --bg-sucess: rgb(0, 128, 0);
   --text-color: #fff;
   --main-color: #274d70;
   --big-font: 7rem;
   --p-font: 1.1rem;
   --sub-font: 1rem;
-}
-
-body {
-  background-color: #8acdf3;
-}
-
-.bg-success {
-  color: var(--bg-sucess);
+  --kecil-font: 0.5rem;
 }
 
 /* Mulai nav bar */
@@ -188,146 +180,67 @@ header ul li .dropdown li {
 
 /* end responsive nav */
 
-/*  Star main img */
-/* Styling Hero Section */
-.hero {
-  background-image: url("/assets/img/main-donasi.jpg"); /* Ganti dengan path gambar latar belakang Anda */
-  background-size: cover;
-  background-position: center;
+/* end nav bar */
+
+/* artilel */
+
+.conten {
+  background-color: #274d70;
+  height: 50vh;
+  padding-top: 13%;
   text-align: center;
+  font-size: 5vh;
   color: white;
-  padding: 150px 0;
-  position: relative;
-  top: 77px;
-  margin-bottom: 100px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(https://cdn.antarafoto.com/cache/1200x798/2023/06/14/pembagian-air-bersih-16xor-dom.jpg);
 }
 
-.hero h1 {
-  font-size: 3rem;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
-}
-
-/* ------------------------------------------------------------------- */
-/* Styling Card Section */
-.cards {
-  display: flex;
-  justify-content: center;
+.lokasi {
+  text-align: center;
   align-items: center;
-  gap: 20px;
-  padding: 20px;
 }
 
-.card {
-  background-color: #8acdf3; /* Warna biru muda yang cocok dengan latar belakang body */
-  border-radius: 10px;
-  padding: 15px;
-  text-align: center;
-  max-width: 300px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
-  background-color: #edeff9;
+.lokasi-isi {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
 }
 
-.card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px; /* Sudut terbulat pada gambar */
-}
-
-.card h4 {
-  margin: 10px 0px 7px 0px;
-}
-
-.card i {
-  color: green;
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 14px;
-  text-align: center;
-  padding: 0px 4px;
-}
-
-/* Optional: Add hover effect */
-.card:hover {
-  background-color: var(
-    --main-color
-  ); /* Warna biru muda yang lebih terang saat hover */
-  transform: scale(1.05);
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
-  color: var(--text-color);
-}
-
-/* ----------------------------- */
-/* Styling Progres Horizontal */
-.progress-container {
-  width: 100%;
-  background-color: #ccc;
-  height: 20px;
-  border-radius: 10px;
-  margin-top: 20px;
-}
-
-.progress-bar {
-  width: 66%; /* Ubah nilai ini untuk mengatur kemajuan progres */
-  height: 100%;
-  background-color: #007bff; /* Warna progres */
-  border-radius: 10px;
-  font-size: 73%;
-  padding-top: 3px;
-  color: var(--text-color);
-}
-
-.progress-label {
-  margin-top: 5px;
-}
-
-.progress-text-below {
-  margin-bottom: 12px;
-}
-
-.progress-label,
-.progress-text-below {
+.lokasi-content {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  text-align: left;
 }
 
-.progress-text-left,
-.progress-text-right {
-  padding: 0 5px;
-  font-size: 80%;
+.lokasi-container {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 110px;
 }
 
-/* -------------------- */
-.donate-button {
-  background-color: var(--bg-sucess); /* Warna tombol donasi */
-  color: #fff; /* Warna teks tombol donasi */
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
-  margin-top: 20px;
-  cursor: pointer;
-  display: inline-block;
+.lokasi-container h5 {
+  padding-top: 1rem;
+  font-size: 1rem;
 }
 
-/* --------------------------------------------------------------- */
-/* ------------------------------------------------------------------------- */
+.lokasi-container p {
+  padding-top: 1rem;
+  text-align: justify;
+  width: 20rem;
+}
+
+div h5 a {
+  color: #063158;
+}
+
+section {
+  padding: 70px 17%;
+}
+
 .footer {
   color: white;
   background-color: var(--main-color);
-  position: relative;
-  padding: 50px;
 }
 
 .footer-content {

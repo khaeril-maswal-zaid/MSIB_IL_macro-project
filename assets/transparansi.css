@@ -1,0 +1,266 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --bg-color: #1f1f21;
+    --text-color: #fff;
+    --main-color: #274D70;
+    --big-font: 7rem;
+    --p-font: 1.1rem;
+    --sub-font: 1rem;
+    --kecil-font: 0.5rem;
+}
+
+
+/* Mulai nav bar */
+
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    min-height: 66px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 32px;
+    background: var(--main-color);
+    transition: all ease .45s;
+}
+
+.logo {
+    color: var(--text-color);
+    font-family: Judson;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+header ul {
+    position: relative;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+    float: left;
+}
+
+.informasi i {
+    margin-top: 2px;
+}
+
+header ul li a {
+    color: var(--text-color);
+    font-size: var(--sub-font);
+    padding: 20px 20px;
+    text-decoration-line: none;
+    justify-content: space-between;
+    display: flex;
+}
+
+header ul li.beranda:hover {
+    border-bottom: 3px solid #64d6f4;
+    border-top: 3px solid #64d6f4;
+}
+
+header ul li.cuaca:hover {
+    border-bottom: 3px solid #64d6f4;
+    border-top: 3px solid #64d6f4;
+}
+
+header ul li.mengapa:hover {
+    border-bottom: 3px solid #64d6f4;
+    border-top: 3px solid #64d6f4;
+}
+
+header ul li.informasi:hover {
+    border-bottom: 3px solid #64d6f4;
+    border-top: 3px solid #64d6f4;
+}
+
+header ul li.donasi:hover {
+    border-bottom: 3px solid #64d6f4;
+    border-top: 3px solid #64d6f4;
+}
+
+header ul li.lokasi:hover {
+    border-bottom: 3px solid #64d6f4;
+    border-top: 3px solid #64d6f4;
+}
+
+header ul li .dropdown {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background-color: var(--main-color);
+    display: none;
+}
+
+header ul li.informasi:hover .dropdown {
+    display: block;
+}
+
+header ul li ul li:hover {
+    background-color: #152a3d;
+}
+
+header ul li .dropdown li {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+/* Mulai responsive nav */
+
+@media (max-width: 920px) {
+    header {
+        padding: 10px 20px;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        top: 66px;
+        left: 0;
+        background: #386ea0;
+        display: none;
+    }
+    header.active nav {
+        display: initial;
+    }
+    header nav ul li {
+        width: 100%;
+    }
+    header ul li .dropdown {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+    .menu {
+        position: relative;
+        width: 40px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu::before {
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 3px;
+        background: white;
+        transform: translateY(-12px);
+        box-shadow: 0 12px white;
+    }
+    .menu::after {
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 3px;
+        background: white;
+        transform: translateY(12px);
+    }
+    header.active .menu::before {
+        transform: rotate(45deg);
+        box-shadow: 0 0 white;
+    }
+    header.active .menu::after {
+        transform: rotate(315deg);
+    }
+}
+
+
+/* end responsive nav */
+
+
+/* end nav bar */
+
+
+/* artilel */
+
+.conten {
+    background-color: #274D70;
+    height: 50vh;
+    padding-top: 13%;
+    text-align: center;
+    font-size: 5vh;
+    color: white;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(https://cpssoft.com/wp-content/uploads/2019/05/laporan-keuangan-perusahaan.jpg);
+}
+
+section {
+    padding: 70px 17%;
+}
+
+.content {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    gap: 4rem;
+    margin-top: 15rem;
+}
+
+.content .content-text {
+    width: 33.75rem;
+    text-align: justify;
+}
+
+.content .content-text p {
+    margin-top: 1rem;
+}
+
+.content-dokumentasi {
+    text-align: center;
+    align-items: center;
+}
+
+.content-dokumentasi .dokumentasi-text {
+    margin-bottom: 5rem;
+    margin-top: 15rem;
+}
+
+.content-dokumentasi .dokumentasi-gambar img {
+    margin-bottom: 15rem;
+}
+
+.footer {
+    color: white;
+    background-color: var(--main-color);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content .footer-text {
+    display: flex;
+    flex-direction: column;
+    width: 348px;
+    text-align: justify;
+}
+
+.footer-content .footer-text h2 {
+    font-family: Judson;
+}
+
+.footer-content .footer-text p {
+    opacity: 70%;
+}
+
+.footer-content .footer-col li {
+    opacity: 70%;
+}
