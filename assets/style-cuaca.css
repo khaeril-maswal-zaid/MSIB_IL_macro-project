@@ -22,7 +22,7 @@
 /* -------------------------------------------------------------------------------------------------- */
 
 body {
-  background-color: #8acdf3;
+  background-color: var(--text-color);
 }
 
 main {
@@ -36,7 +36,7 @@ main {
 aside {
   flex: 1; /* Area artikel akan mengambil 1 bagian dari total 4 bagian */
   border-radius: 10px; /* Nilai ini akan membuat sudut-sudutnya lebih bulat */
-  background-color: #8e8d8d;
+  background-color: #f0f0f0;
   margin: 0px 10px;
 }
 
